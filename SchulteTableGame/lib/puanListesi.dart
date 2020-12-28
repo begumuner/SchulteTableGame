@@ -53,7 +53,6 @@ class _puanState extends State<puan> {
                         color: Colors.green[500],
                         margin: EdgeInsets.all(4),
                         elevation: 20,
-                        //genellikle childlari listTile isimli sinifi kullanarak yapariz
                         child: ListTile(
                           leading: CircleAvatar(
                             child: Icon(
@@ -62,7 +61,7 @@ class _puanState extends State<puan> {
                             ),
                             backgroundColor: Colors.white,
                           ),
-                          title: Text(tumPuanlar[index+1].puan),
+                          title: Text(tumPuanlar[index].puan),
                         ),
                       ),
                     ),

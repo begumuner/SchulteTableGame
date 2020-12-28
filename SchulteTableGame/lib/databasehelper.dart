@@ -49,11 +49,6 @@ class DatabaseHelper {
     return result.toString();
   }
 
-  Future<int> puanSil(int katID) async{
-    var dbclient = await db;
-    var sonuc=await dbclient.delete("Puanlar",where: 'puan=?');
-    return sonuc;
-  }
     
 
    

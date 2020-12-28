@@ -42,13 +42,5 @@ class DatabaseHelper2 {
 
   }
 
-    Future<int> toplamHarcamalarGetir() async {
-    var dbclient = await db;
-
-    List<Map> list = await dbclient
-        .rawQuery("select MAX(high) as high from High");
-    return list.isNotEmpty ? list[0]["high"] : Null;
-  }
-
    
 }
